@@ -1,0 +1,11 @@
+{
+  "name": "ember-flight-tracker",
+  "description": "Small description for ember-flight-tracker goes here",
+  "main": "",
+  "authors": [
+    "Jose Lawrence <jose.mca2011@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JoseLawrence/ember-flight-tracker-app",
+  "private": true
+}
