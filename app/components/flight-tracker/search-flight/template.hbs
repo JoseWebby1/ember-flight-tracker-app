@@ -1,0 +1,8 @@
+
+{{input type="text" value=source }} <br>
+{{input type="text" value=departureDate }}
+
+<button onclick={{action 'loadData'}}> Search </button>
+
+
+{{components/flight-tracker/flight-results searchResults=searchResults}}

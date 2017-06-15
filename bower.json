@@ -9,6 +9,7 @@
   "homepage": "https://github.com/JoseLawrence/ember-flight-tracker-app",
   "private": true,
   "dependencies": {
-    "bootstrap": "boostrap#^3.3.7"
+    "bootstrap": "boostrap#^3.3.7",
+    "lodash": "^4.17.4"
   }
 }

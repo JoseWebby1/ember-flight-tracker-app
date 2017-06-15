@@ -1,10 +1,22 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-	model() {
+export default Ember.Component.extend({
+
+	init() {
+		this._super(...arguments);
+		this.initializeValues();
+	},
+
+	initializeValues() {
+		this.setProperties({
+			searchResults: []
+		})
+	},
+
+	getAllFlightDetials () {
 		return [
 			{
-				"id": "MMA-LHR",
+				"id": "LHR",
 				"flights": [
 					{
 						"airlinesNo": "BA001",
@@ -53,7 +65,7 @@ export default Ember.Route.extend({
 				]
 			},
 			{
-				"id": "MMA-DXB",
+				"id": "DXB",
 				"flights": [
 					{
 						"airlinesNo": "EM001",
@@ -102,5 +114,26 @@ export default Ember.Route.extend({
 				]
 			}
 		];
+	},
+
+	filterSearchResults(routeId, departureDate) {
+		console.log(`Route - ${routeId} :: Date - ${departureDate}`);
+		let allFlightDetials = this.getAllFlightDetials(),
+				routeDetails = _.filter(allFlightDetials, ['id', routeId]);
+		if(departureDate) {
+			routeDetails = _.filter(routeDetails[0].flights, ['departureDate', departureDate]);
+			return routeDetails;
+		}
+		return routeDetails[0].flights;
+	},
+
+	actions: {
+		loadData() {
+			let routeId = this.get('source'),
+					departureDate = this.get('departureDate'),
+					searchResults = this.filterSearchResults(routeId, departureDate);
+
+			this.set('searchResults', searchResults);
+		}
 	}
 });
