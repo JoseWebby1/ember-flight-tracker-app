@@ -10,6 +10,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "boostrap#^3.3.7",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "bootstrap-datepicker": "^1.6.4",
+    "moment": "^2.18.1",
+    "datatables.net": "^1.10.15"
   }
 }

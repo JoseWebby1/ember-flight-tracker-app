@@ -1,8 +1,41 @@
+<div class="row">
+	<div class="col-md-2 title">
+		From: 
+	</div>
+	<div class="col-md-4">
+		<select onchange={{action "onSelectFrom" value="target.value"}} class="select-box">
+			<option value=""> Please select </option>
+			{{#each model as |option|}}
+				<option value={{option.id}}>{{option.value}}</option>
+			{{/each}}
+		</select>
+	</div>
+	<div class="col-md-1 title">
+			To: 
+	</div>
+	<div class="col-md-3">
+		<select onchange={{action "onSelectTo" value="target.value"}} class="select-box">
+			<option value=""> Please select </option>
+			{{#each model as |option|}}
+				<option value={{option.id}}>{{option.value}}</option>
+			{{/each}}
+		</select>
+	</div>
+</div>
 
-{{input type="text" value=source }} <br>
-{{input type="text" value=departureDate }}
+<div class="row m-top20">
+	<div class="col-md-2 title">
+			Select travel date:
+	</div>
+	<div class="col-md-3">
+		{{bootstrap-datepicker value=departureDate format="yyyy-mm-dd" startDate="today" clearBtn=true todayBtn=true autoclose=true}}
+	</div>
+</div>
 
-<button onclick={{action 'loadData'}}> Search </button>
+<div class="row m-top20">
+	<button onclick={{action 'loadData'}}> Search </button>
+</div>
 
-
-{{components/flight-tracker/flight-results searchResults=searchResults}}
+{{#if showResultTable}}
+		{{components/flight-tracker/flight-results searchResults=searchResults}}
+{{/if}}
