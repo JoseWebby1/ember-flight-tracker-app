@@ -11,7 +11,7 @@
 			<th> Arrival Date </th>
 			<th> Departure Time </th>
 			<th> Arrival Time </th>
-			<th> Price </th>
+			<th class="cur-pointer" onclick={{action 'sortTable'}}> Price <span class="{{if isSortAscending 'glyphicon glyphicon-sort-by-attributes-alt' 'glyphicon glyphicon-sort-by-attributes'}}"> </span> </th>
 		</tr>
 	</thead>
 	<tbody>

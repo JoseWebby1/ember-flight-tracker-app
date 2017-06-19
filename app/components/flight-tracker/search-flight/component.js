@@ -34,17 +34,6 @@ export default Ember.Component.extend({
 						"price": "$450"
 					},
 					{
-						"airlinesNo": "BA002",
-						"airlinesName": "British Airways",
-						"source": "Chennai",
-						"destination": "London",
-						"departureDate": "2017-06-16",
-						"arrivalDate": "2017-06-17",
-						"departureTime": "23.00",
-						"arrivalTime": "05.00",
-						"price": "$500"
-					},
-					{
 						"airlinesNo": "BA001",
 						"airlinesName": "British Airways",
 						"source": "Chennai",
@@ -76,6 +65,28 @@ export default Ember.Component.extend({
 						"departureTime": "23.00",
 						"arrivalTime": "08.00",
 						"price": "$500"
+					},
+					{
+						"airlinesNo": "BA001",
+						"airlinesName": "British Airways",
+						"source": "Chennai",
+						"destination": "London",
+						"departureDate": "2017-06-18",
+						"arrivalDate": "2017-06-19",
+						"departureTime": "23.00",
+						"arrivalTime": "05.00",
+						"price": "$570"
+					},
+					{
+						"airlinesNo": "BA002",
+						"airlinesName": "British Airways",
+						"source": "Chennai",
+						"destination": "London",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-20",
+						"departureTime": "23.00",
+						"arrivalTime": "05.00",
+						"price": "$600"
 					}
 				]
 			},
@@ -92,17 +103,6 @@ export default Ember.Component.extend({
 						"departureTime": "08.00",
 						"arrivalTime": "16.00",
 						"price": "$250"
-					},
-					{
-						"airlinesNo": "EM002",
-						"airlinesName": "Emirates",
-						"source": "Chennai",
-						"destination": "Dubai",
-						"departureDate": "2017-06-16",
-						"arrivalDate": "2017-06-17",
-						"departureTime": "23.00",
-						"arrivalTime": "01.00",
-						"price": "$200"
 					},
 					{
 						"airlinesNo": "EM001",
@@ -125,6 +125,28 @@ export default Ember.Component.extend({
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$220"
+					},
+					{
+						"airlinesNo": "EM003",
+						"airlinesName": "Emirates",
+						"source": "Chennai",
+						"destination": "Dubai",
+						"departureDate": "2017-06-18",
+						"arrivalDate": "2017-06-19",
+						"departureTime": "23.00",
+						"arrivalTime": "01.00",
+						"price": "$300"
+					},
+					{
+						"airlinesNo": "EM002",
+						"airlinesName": "Emirates",
+						"source": "Chennai",
+						"destination": "Dubai",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-20",
+						"departureTime": "23.00",
+						"arrivalTime": "01.00",
+						"price": "$285"
 					}
 				]
 			},
@@ -196,6 +218,17 @@ export default Ember.Component.extend({
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$220"
+					},
+					{
+						"airlinesNo": "SG001",
+						"airlinesName": "Singapore airlines",
+						"source": "Chennai",
+						"destination": "Singapore",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-19",
+						"departureTime": "23.00",
+						"arrivalTime": "01.00",
+						"price": "$245"
 					}
 				]
 			},
@@ -218,8 +251,8 @@ export default Ember.Component.extend({
 						"airlinesName": "Singapore airlines",
 						"source": "Dubai",
 						"destination": "Singapore",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-19",
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$260"
@@ -229,8 +262,8 @@ export default Ember.Component.extend({
 						"airlinesName": "Singapore airlines",
 						"source": "Dubai",
 						"destination": "Singapore",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-19",
 						"departureTime": "02.00",
 						"arrivalTime": "12.00",
 						"price": "$520"
@@ -240,8 +273,8 @@ export default Ember.Component.extend({
 						"airlinesName": "Singapore airlines",
 						"source": "Dubai",
 						"destination": "Singapore",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-20",
+						"arrivalDate": "2017-06-20",
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$220"
@@ -251,8 +284,8 @@ export default Ember.Component.extend({
 						"airlinesName": "Singapore airlines",
 						"source": "Dubai",
 						"destination": "Singapore",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-20",
+						"arrivalDate": "2017-06-20",
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$290"
@@ -262,11 +295,22 @@ export default Ember.Component.extend({
 						"airlinesName": "Singapore airlines",
 						"source": "Dubai",
 						"destination": "Singapore",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-21",
+						"arrivalDate": "2017-06-21",
 						"departureTime": "23.00",
 						"arrivalTime": "01.00",
 						"price": "$220"
+					},
+					{
+						"airlinesNo": "SG001",
+						"airlinesName": "Singapore airlines",
+						"source": "Dubai",
+						"destination": "Singapore",
+						"departureDate": "2017-06-21",
+						"arrivalDate": "2017-06-21",
+						"departureTime": "23.00",
+						"arrivalTime": "01.00",
+						"price": "$222"
 					}
 				]
 			},
@@ -322,8 +366,8 @@ export default Ember.Component.extend({
 						"airlinesName": "British Airways",
 						"source": "London",
 						"destination": "Chennai",
-						"departureDate": "2017-06-18",
-						"arrivalDate": "2017-06-18",
+						"departureDate": "2017-06-19",
+						"arrivalDate": "2017-06-19",
 						"departureTime": "23.00",
 						"arrivalTime": "08.00",
 						"price": "$500"

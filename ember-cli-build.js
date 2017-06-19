@@ -1,5 +1,6 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const Funnel = require('broccoli-funnel');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
@@ -26,6 +27,11 @@ module.exports = function(defaults) {
   app.import('bower_components/moment/min/moment.min.js');
   app.import('bower_components/datatables.net/js/jquery.dataTables.min.js');
 
+  let bootstrapFonts = new Funnel('bower_components/bootstrap/dist/fonts', {
+    srcDir: '/',
+    include: ['*.*'],
+    destDir: '/fonts'
+  });
 
-  return app.toTree();
+  return app.toTree(bootstrapFonts);
 };
